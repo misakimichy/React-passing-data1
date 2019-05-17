@@ -107,12 +107,13 @@ class App extends Component {
               const userName = users[profile.userID].name;
               const favoriteMovieName = movies[profile.favoriteMovieID].name;
 
-              return
+              return (
                 <li key={profile.id}>
                   {/* Sentence should look like this: "Jane Cruz's avorite movie is Planet Earth." */}
                 <p>{`${userName}'s favorite movie is ${favoriteMovieName}.`}</p>
                 </li>
-          })};
+              )
+          })}
           </ul>
       </div>
     );
